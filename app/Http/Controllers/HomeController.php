@@ -78,6 +78,9 @@ class HomeController extends Controller
             $userid = $user->id;
             $count = Cart::where('user_id',$userid)->count();
             $cart = Cart::where('user_id',$userid)->get();
+        } else {
+            $count = 0;
+            $cart = collect();
         }
         return view('home.mycart',compact('count','cart'));
     }

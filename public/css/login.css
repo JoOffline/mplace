@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(120deg, #ff5722, #ff9800);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.login-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+
+.textbox {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff5722;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #ff9800;
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #ff5722;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff9800;
+    transform: translateY(-2px);
+}
+
+.optional {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.optional span {
+    color: #333;
+}
+
+.changebutton {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+    margin : auto;
+    transition: color 0.3s ease;
+}
+
+.changebutton:hover {
+    color: #ff9800;
+}
+
+.spanreg {
+    color : rgba(255, 255, 255, 0.2);
+}
